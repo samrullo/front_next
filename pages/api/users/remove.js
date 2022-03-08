@@ -1,5 +1,4 @@
-import getUsersUrl from "../../../src/components/utils";
-
+import { getUsersUrl } from "../../../src/utils/utils";
 export default async function NewUser(req, res) {
   const user_data = req.body;
 

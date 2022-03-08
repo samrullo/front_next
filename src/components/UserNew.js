@@ -2,7 +2,7 @@ import { PropertyKeys } from "ag-grid-community";
 import axios from "axios";
 import React, { useEffect } from "react";
 import { useState } from "react";
-import getUsersUrl from "./utils";
+import { getUsersUrl } from "../utils/utils";
 
 const UserNew = (props) => {
   const { getUsers } = props;

@@ -35,8 +35,19 @@ const App = (props) => {
         ""
       )}
       <h1>App component...</h1>
-      <Link href="grid_one">Grid One</Link>
-      <button onClick={toggleNewUserForm}>NewUserForm</button>
+      <ul className="list-group list-group-horizontal">
+        <li className="list-group-item">
+          <Link href="grid_one">
+            <a className="btn btn-primary">Grid One</a>
+          </Link>
+        </li>
+        <li className="list-group-item">
+          <button className="btn btn-primary" onClick={toggleNewUserForm}>
+            NewUserForm
+          </button>
+        </li>
+      </ul>
+
       {showNewUserForm ? <UserNew getUsers={getUsers} /> : ""}
       <UserGrid users={users} setMessage={setMessage} />
     </div>
